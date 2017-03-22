@@ -27,7 +27,6 @@ userInput.addEventListener('keyup', function() {
 function scoring() {
   if (guesses >=1 && guesses <= 3) {
     playerScore = playerScore + 10;
-    console.log('score', playerScore);
   } else if (guesses >= 4 && guesses <=7) {
     playerScore = playerScore + 5;
   } else if (guesses >= 8 && guesses <= 10){
@@ -57,7 +56,6 @@ guessBtn.addEventListener('click', function() {
     feedback.innerText = "Boom!! YOU WIN!";
     min = min - 10;
     max = max + 10;
-    console.log(min, max);
     randomNumber = randomNum(min, max);
     console.log(randomNumber);
     document.querySelector('.min-view').value = min;
