@@ -1,0 +1,157 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin: 0px;
+  width: 100%;
+}
+
+header {
+  background: #404041;
+  height: 70px;
+  font-size: 60px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.name {
+  color: #ED458B;
+  font-weight: 700;
+  padding-right: 8px;
+}
+
+.guesser {
+  font-weight: 300;
+  color: #E6E7E8;
+}
+
+input {
+  display:block;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin: 40px auto;
+  padding: 10px;
+  width: 40%;
+}
+
+button {
+  display: inline-block;
+  background: #929497;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  padding: 5px;
+  width: 18%;
+}
+
+.guess-btn {
+  margin-right: 50px;
+}
+
+.guess-btn:hover,
+.clear-btn:hover,
+.reset-btn:hover {
+  background: #EB008B;
+}
+
+.clear-btn:disabled,
+.reset-btn:disabled {
+  background: #d0d2d3;
+}
+
+.display-guess {
+  color: #EB008B;
+  font-size: 150px;
+  margin: -50px 0;
+  font-weight: 300;
+}
+
+label {
+  font-size: 25px;
+}
+
+.results {
+  font-size: 25px;
+}
+
+.min-view {
+  margin-right: 20px;
+}
+
+.min-view,
+.max-view {
+  width: 50px;
+  display: inline-block;
+  text-align: center;
+  padding-left: 15px;
+}
+
+.reset-btn {
+  width: 40%;
+  padding: 5px;
+}
+
+/*media queries*/
+
+@media (max-width: 800px) {
+
+input{
+  width: 55%;
+}
+
+button {
+width: 25%;
+}
+
+.reset-btn {
+  width: 50%;
+}
+}
+@media (max-width: 540px) {
+
+header {
+  font-size: 45px;
+  padding-bottom: 0;
+}
+}
+
+@media (max-width: 475px) {
+
+header {
+  font-size: 40px;
+  padding-bottom: 0;
+  padding-top: 10px;
+}
+
+input {
+  width: 70%;
+}
+
+button {
+  width: 35%;
+  font-size: 20px;
+}
+
+.guess-btn {
+  margin-right: 20px;
+}
+
+.reset-btn {
+  width: 70%;
+}
+}
+
+@media (max-width: 355px) {
+
+header {
+  font-size: 35px;
+  padding-bottom: 0;
+  padding-top: 15px;
+}
+
+.results,
+label {
+  font-size: 20px;
+}
