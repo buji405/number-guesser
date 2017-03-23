@@ -1,7 +1,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  text-align: center;
   margin: 0px;
+  text-align: center;
   width: 100%;
 }
 
@@ -25,17 +25,17 @@ header {
 }
 
 .line {
+  color: #EB008B;
   display: inline-block;
   font-size: 24px;
   font-weight: 700;
-  color: #EB008B;
 }
 
 input {
   border: 1px solid #000;
   display: block;
-  font-size: 20px;
   font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
   font-weight: 300;
   margin: 40px auto 0 auto;
   padding: 10px;
@@ -86,7 +86,6 @@ label {
 
 .min-view {
   margin-right: 20px;
-  /*margin-top: 0px;*/
 }
 
 .min-view,
@@ -94,8 +93,8 @@ label {
   display: inline-block;
   padding-left: 15px;
   text-align: center;
-  width: 50px;
   margin-top: 20px;
+  width: 50px;
 }
 
 .reset-btn {
