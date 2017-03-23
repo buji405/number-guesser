@@ -1,4 +1,4 @@
-var userInput = document.querySelector('input')
+var userInput = document.querySelector('input');
 var guessBtn = document.querySelector('.guess-btn');
 var clearBtn = document.querySelector('.clear-btn');
 var displayNum = document.querySelector('.display-guess');
