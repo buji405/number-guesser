@@ -3,8 +3,11 @@ var guessBtn = document.querySelector('.guess-btn');
 var clearBtn = document.querySelector('.clear-btn');
 var displayNum = document.querySelector('.display-guess');
 var resetGame = document.querySelector('.reset-btn');
+var score = document.querySelector('.score');
 var min = 0;
 var max = 100;
+var guesses = 0;
+var playerScore = 0;
 
 function randomNum() {
   var newRandom = Math.floor(Math.random() * (max - min)) + min;
@@ -21,9 +24,21 @@ userInput.addEventListener('keyup', function() {
   }
 })
 
+function scoring() {
+  if (guesses >=1 && guesses <= 3) {
+    playerScore = playerScore + 10;
+  } else if (guesses >= 4 && guesses <=7) {
+    playerScore = playerScore + 5;
+  } else if (guesses >= 8 && guesses <= 10){
+    playerScore = playerScore + 2;
+  } else {
+    playerScore = playerScore;
+  }
+}
+
 guessBtn.addEventListener('click', function() {
   var feedback = document.querySelector('.feedback');
-
+  guesses++;
   displayNum.innerText = parseInt(userInput.value);
   if (isNaN(parseInt(userInput.value))) {
     alert("Must enter a number");
@@ -45,6 +60,8 @@ guessBtn.addEventListener('click', function() {
     console.log(randomNumber);
     document.querySelector('.min-view').value = min;
     document.querySelector('.max-view').value = max;
+    scoring();
+    score.innerText = playerScore;
   }
 })
 

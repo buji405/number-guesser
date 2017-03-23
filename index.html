@@ -8,11 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <header>
+    <header role="banner">
       <span class="name">Number</span><span class="guesser">Guesser</span>
     </header>
     <main>
-      <input type="number" placeholder="Enter your guess">
+      <input name="number-field" type="number" placeholder="Enter your guess">
+      <p class="line">Score:</p>
+      <p class="line score">0</p><br>
       <button class="guess-btn">Guess</button>
       <button class="clear-btn" disabled>Clear</button>
     </main>
@@ -23,9 +25,9 @@
       <button class="reset-btn" disabled>Reset</button>
     </section>
     <label for="min-view">Min:</label>
-    <input class="min-view" type="number" value=0>
+    <input name="change-min"class="min-view" type="number" value=0>
     <label for="max-view">Max:</label>
-    <input class="max-view" type="number" value=100>
+    <input name="change-max" class="max-view" type="number" value=100>
     <script src="main.js"></script>
   </body>
 </html>
