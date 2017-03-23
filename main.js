@@ -1,4 +1,4 @@
-var userInput = document.querySelector('input')
+var userInput = document.querySelector('input');
 var guessBtn = document.querySelector('.guess-btn');
 var clearBtn = document.querySelector('.clear-btn');
 var displayNum = document.querySelector('.display-guess');
@@ -16,7 +16,7 @@ var randomNumber = randomNum();
 console.log(randomNumber);
 
 userInput.addEventListener('keyup', function() {
-  if(event.keyCode == 13) {
+  if (event.keyCode == 13) {
     guessBtn.click();
   }
 })
@@ -25,23 +25,22 @@ guessBtn.addEventListener('click', function() {
   var feedback = document.querySelector('.feedback');
 
   displayNum.innerText = parseInt(userInput.value);
-  if(isNaN(parseInt(userInput.value))) {
+  if (isNaN(parseInt(userInput.value))) {
     alert("Must enter a number");
-    displayNum.innerText = "?"
+    displayNum.innerText = "?";
   }
   if (userInput.value > max){
     alert("Guess between the range below");
   } else if (userInput.value < min) {
     alert ("Guess between the range below");
   } else if (userInput.value < randomNumber) {
-    feedback.innerText = "That guess was too low, try again!"
+    feedback.innerText = "That guess was too low, try again!";
   } else if (userInput.value > randomNumber) {
-    feedback.innerText = "That guess was too high, maybe next time!"
-  } else  {
-    feedback.innerText = "Boom!! YOU WIN!"
+    feedback.innerText = "That guess was too high, maybe next time!";
+  } else {
+    feedback.innerText = "Boom!! YOU WIN!";
     min = min - 10;
     max = max + 10;
-    console.log(min, max);
     randomNumber = randomNum(min, max);
     console.log(randomNumber);
     document.querySelector('.min-view').value = min;
@@ -50,8 +49,8 @@ guessBtn.addEventListener('click', function() {
 })
 
 userInput.addEventListener('keyup', function() {
-  if(userInput.value === "") {
-    disableBtns()
+  if (userInput.value === "") {
+    disableBtns();
   } else {
     clearBtn.disabled = false;
     resetGame.disabled = false;
@@ -68,8 +67,8 @@ document.querySelector('.max-view', '.min-view').addEventListener('blur', functi
 })
 
 function clearIt() {
-  userInput.value = ""
-  displayNum.innerText = "?"
+  userInput.value = "";
+  displayNum.innerText = "?";
 }
 
 function disableBtns() {
@@ -83,5 +82,5 @@ clearBtn.addEventListener('click', function(){
 })
 
 resetGame.addEventListener('click', function() {
-  location.reload()
+  location.reload();
 })

@@ -25,7 +25,7 @@ header {
 }
 
 input {
-  display:block;
+  display: block;
   font-size: 20px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -35,11 +35,11 @@ input {
 }
 
 button {
-  display: inline-block;
   background: #929497;
   border: none;
   border-radius: 30px;
   color: #fff;
+  display: inline-block;
   font-family: 'Open Sans', sans-serif;
   font-size: 25px;
   padding: 5px;
@@ -64,8 +64,8 @@ button {
 .display-guess {
   color: #EB008B;
   font-size: 150px;
-  margin: -50px 0;
   font-weight: 300;
+  margin: -50px 0;
 }
 
 label {
@@ -82,76 +82,77 @@ label {
 
 .min-view,
 .max-view {
-  width: 50px;
   display: inline-block;
-  text-align: center;
   padding-left: 15px;
+  text-align: center;
+  width: 50px;
 }
 
 .reset-btn {
-  width: 40%;
   padding: 5px;
+  width: 40%;
 }
 
 /*media queries*/
 
 @media (max-width: 800px) {
 
-input{
-  width: 55%;
-}
+  input {
+    width: 55%;
+  }
 
-button {
-width: 25%;
-}
+  button {
+    width: 25%;
+  }
 
-.reset-btn {
-  width: 50%;
-}
+  .reset-btn {
+    width: 50%;
+  }
 }
 @media (max-width: 540px) {
 
-header {
-  font-size: 45px;
-  padding-bottom: 0;
-}
+  header {
+    font-size: 45px;
+    padding-bottom: 0;
+  }
 }
 
 @media (max-width: 475px) {
 
-header {
-  font-size: 40px;
-  padding-bottom: 0;
-  padding-top: 10px;
-}
+  header {
+    font-size: 40px;
+    padding-bottom: 0;
+    padding-top: 10px;
+  }
 
-input {
-  width: 70%;
-}
+  input {
+    width: 70%;
+  }
 
-button {
-  width: 35%;
-  font-size: 20px;
-}
+  button {
+    width: 35%;
+    font-size: 20px;
+  }
 
-.guess-btn {
-  margin-right: 20px;
-}
+  .guess-btn {
+    margin-right: 20px;
+  }
 
-.reset-btn {
-  width: 70%;
-}
+  .reset-btn {
+    width: 70%;
+  }
 }
 
 @media (max-width: 355px) {
 
-header {
-  font-size: 35px;
-  padding-bottom: 0;
-  padding-top: 15px;
-}
+  header {
+    font-size: 35px;
+    padding-bottom: 0;
+    padding-top: 15px;
+  }
 
-.results,
-label {
-  font-size: 20px;
+  .results,
+  label {
+    font-size: 20px;
+  }
 }
